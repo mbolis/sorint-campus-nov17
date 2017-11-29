@@ -1,24 +1,43 @@
 public class ProgrammingFundamentals {
+
+    static String readln() {
+        return new java.util.Scanner(System.in).nextLine();
+    }
+
     public static void main(String args[]) {
         // Input utente
         int x=10;
         int y=25;
         x=12;
-        
-        int z;
+
+        System.out.println("Sum or Difference? (+/-)");
+        String input = readln();
+
         String op, opDesc;
-        
-        // SE X MAGGIORE DI Y ALLORA SOTTRAZIONE ALTRIMENTI SOMMA
-        // IF X > Y THEN SUBTRACTION ELSE SUM
-        if (x > y) {
-            z = x - y;
-            op = "-";
-            opDesc = "Difference";
-        } else {
-            z = x + y;
+        if ("+".equals(input)) {
             op = "+";
-            opDesc = "Sum";
+            opDesc =
+        } else if ("-".equals(input)) {
+
+
+        } else {
+
+
         }
+
+        ////////// FINCHÈ L'UTENTE IMMETTE UN NUMERO, SOMMARE O SOTTRARRE
+        // QUANDO INVECE IMMETTE "stop", FERMARSI
+
+        System.out.println("First number?")
+        String number = readln();
+        int total = Integer.parseInt(number);
+
+        while (!"stop".equals(number)) {
+
+            int z;
+
+        }
+        //////////
 
         // Output
         String msg = opDesc + " of x" + op + "y = ";
